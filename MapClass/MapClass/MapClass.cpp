@@ -10,8 +10,8 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
-#include "MapClass.h"
-#include "C:\Users\Steven_dev\Desktop\CS_Stuff\BT-BTree-class\BT BTree Class\BT BTree Class\BT-BTree.h"
+#include "Map.h"
+#include "MultiMap.h"
 
 using namespace std;
 
@@ -19,7 +19,7 @@ string randString();
 
 int main()
 {
-    Map<string, int> m;
+    MMap<string, int> m;
     string input = "";
     (srand(time(NULL)));
     while (true) {
@@ -45,8 +45,9 @@ int main()
             string key = "";
             cout << "? ";
             cin >> key;
-            if (m.get(key)) {
-                cout << "item is found. |" << m.get(key) << "|\n";
+            if (m.contains(key)) {
+                cout << "item is found. map[" 
+                    << key << "] = " << m[key] << endl; "|\n";
             } else {
                 cout << "Item not found.\n";
             }
@@ -75,6 +76,15 @@ int main()
             cout << "? ";
             cin >> key;
             cout << "map[" << key << "] = " << m[key] << endl;
+            cout << m;
+            cout << "\n\n=========================\n";
+        } else if (input == "t") {
+            int num = 0;
+            string key = "";
+            cout << "? ";
+            cin >> key >> num;
+            m[key] += num;
+            cout << "map[" << key << "] += " << m[key] << endl;
             cout << m;
             cout << "\n\n=========================\n";
         }

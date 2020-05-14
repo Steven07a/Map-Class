@@ -35,5 +35,14 @@
     <ClInclude Include="Z_WORKREPORT.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vector\vector\vector\Vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -152,7 +152,10 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\BT-BTree-class\BT BTree Class\BT BTree Class\BT-BTree.h" />
     <ClInclude Include="..\..\..\BTree-Functions\BTree-Functions\BTree-Functions\bTreeFunctions.h" />
+    <ClInclude Include="..\..\..\vector\vector\vector\Vector.h" />
+    <ClInclude Include="Map.h" />
     <ClInclude Include="MapClass.h" />
+    <ClInclude Include="MultiMap.h" />
     <ClInclude Include="Z_OUTPUT.h" />
     <ClInclude Include="Z_WORKREPORT.h" />
   </ItemGroup>
